@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Article</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			p{
+				font-size: 1.5em;
+			}
+		</style>
+	</head>
+		<body>
+			{% if article %}
+				<h2>{{article.title}}</h2>
+				Submitted on: {{article.created.date()}}
+				<p><b>{{article.content}}</b></p>
+			{% endif %}
+		</body>
+</html>

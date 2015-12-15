@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Blog</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			p{
+				font-size: 1.5em;
+			}
+		</style>
+	</head>
+
+	<body>
+		{% for article in articles %}
+			<h2>{{article.title}}</h2>
+			Submitted on {{article.created.date()}}
+			<p>{{article.content}}</p>
+			<hr>
+		{% endfor %}
+	</body>
+</html>

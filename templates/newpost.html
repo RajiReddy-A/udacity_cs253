@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create new post!</title>
+		<style type="text/css">
+			body{
+				padding-left:5%;
+			}
+			input[name='title']{
+				width:30em;
+				height:3em;
+			}
+			textarea[name='content']{
+			  width:30em;
+			  height:20em;
+			}
+			div{
+			  color:red;
+			}
+		</style>
+	</head>
+
+	<body>
+		  <h1>New Post</h1>
+		  <form method='post'>
+		  <label>
+			<h3>Title</h3>
+			<input type='text' name='subject' value='{{title}}'>
+		  </label>
+		  <label>
+			<h3>Content</h3>
+			<textarea name='content'>{{content}}</textarea>
+		  </label><br>
+		  <div>{{error}}</div>
+		  <input type='submit'>
+		  </form>
+	</body>
+</html>

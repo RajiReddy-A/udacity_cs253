@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+		<style type="text/css">
+			body{
+				padding-left: 30%;
+			}
+			form h3{
+				text-indent: 5em;
+			}
+		</style>
+	</head>
+		<body>
+			<form method='post'>
+				<h3>Log In</h3>
+				<br>
+				<div style='text-align:right;width:20em'>
+				<label>
+					Username <input type='text' name='username' value='{{username}}'>
+				</label><br><br>
+				<label>
+					Password <input type='password' name='password' value='{{password}}'>
+				</label><br>
+				<p style="color:red">{{invalid}}</p>
+				<input type='submit'>
+				</div>
+			</form>
+		</body>
+</html>
